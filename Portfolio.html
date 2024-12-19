@@ -13,18 +13,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="header-row">
+      <header class="header-row">
         <h1>Tarun</h1>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <div class="row" id="home">
+      <section class="row" id="home">
         <div class="box">
           <h1>Full Stack Developer</h1>
           <p>
@@ -39,15 +41,20 @@
             quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
             perferendis assumenda?
           </p>
-          <button>Button 1</button>
-          <button>Button 2</button>
+          <div class="button-group">
+            <button class="primary-btn">Button 1</button>
+            <button class="secondary-btn">Button 2</button>
+          </div>
         </div>
         <div class="box">
-          <img src="https://picsum.photos/id/2/400/400" alt="Developer placeholder image" />
+          <img
+            src="https://picsum.photos/id/2/400/400"
+            alt="Developer placeholder image"
+          />
         </div>
-      </div>
+      </section>
 
-      <div id="projects" class="row">
+      <section id="projects" class="row">
         <h1>Projects</h1>
         <div class="box">
           <h3>Project 1</h3>
@@ -58,7 +65,6 @@
             Perspiciatis, ab.
           </p>
         </div>
-
         <div class="box">
           <h3>Project 2</h3>
           <p>
@@ -68,7 +74,6 @@
             Perspiciatis, ab.
           </p>
         </div>
-
         <div class="box">
           <h3>Project 3</h3>
           <p>
@@ -78,9 +83,9 @@
             Perspiciatis, ab.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div id="services" class="row">
+      <section id="services" class="row">
         <h1>Services</h1>
         <div class="box">
           <h3>Web App Development</h3>
@@ -91,7 +96,6 @@
             Perspiciatis, ab.
           </p>
         </div>
-
         <div class="box">
           <h3>Mobile App Development</h3>
           <p>
@@ -101,7 +105,6 @@
             Perspiciatis, ab.
           </p>
         </div>
-
         <div class="box">
           <h3>Backend Development</h3>
           <p>
@@ -111,9 +114,9 @@
             Perspiciatis, ab.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div id="about" class="row">
+      <section id="about" class="row">
         <h1>About</h1>
         <h3>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
@@ -122,58 +125,44 @@
           cupiditate vel dolor.
         </h3>
         <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
+        <p>Java, Python, Reactjs</p>
+      </section>
 
-      <div id="contact" class="row">
+      <section id="contact" class="row">
         <h1>Contact</h1>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div class="contact-flex">
           <div class="box">
             <h3>Contact Form</h3>
-            <p>
+            <form>
               <input
                 type="text"
                 placeholder="Enter Name"
-                style="width: 100%; padding: 10px; margin-bottom: 10px;"
+                class="input-field"
               />
-            </p>
-            <p>
               <input
                 type="email"
                 placeholder="Enter Email"
-                style="width: 100%; padding: 10px; margin-bottom: 10px;"
+                class="input-field"
               />
-            </p>
-            <p>
               <textarea
                 rows="5"
                 placeholder="Enter message"
-                style="width: 100%; padding: 10px;"
+                class="input-field"
               ></textarea>
-            </p>
-            <button>Send</button>
+              <button type="submit" class="primary-btn">Send</button>
+            </form>
           </div>
 
           <div class="box">
             <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Dolorem quia nobis eligendi reiciendis. Esse a possimus eum
-              est veritatis aliquid ut eveniet. Et illum odio ut voluptates
-              molestiae? Perspiciatis, ab.
-            </p>
-            <p>
-              <b>Email Address: </b>sample@email.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 343 445 6789
-            </p>
+            <p><b>Address:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><b>Email Address:</b> sample@email.com</p>
+            <p><b>Phone Number:</b> +91 343 445 6789</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="footer">&copy; 2024. All rights reserved.</div>
+      <footer class="footer">&copy; 2024. All rights reserved.</footer>
     </div>
   </body>
 </html>
